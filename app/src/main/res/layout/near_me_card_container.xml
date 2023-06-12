@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="113.10dp"
+    android:layout_height="143.00dp"
+    android:adjustViewBounds = "true"
+    app:cardCornerRadius="19.50dp"
+    android:layout_marginEnd="23.40dp"
+    android:orientation="vertical"
+    >
+
+
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="113.10dp"
+             app:cardCornerRadius="19.50dp"
+             android:id="@+id/near_me_card"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent">
+
+             <ImageButton
+                 android:id="@+id/button"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:scaleType="centerCrop"
+                 android:background="#00FFFFFF"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 tools:srcCompat="@tools:sample/avatars" />
+
+
+         </androidx.cardview.widget.CardView>
+
+
+         <TextView
+             android:id="@+id/place_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:gravity="center"
+             android:text="TextView"
+             android:textColor="#000000"
+             android:textSize="8sp"
+             android:fontFamily="@font/poppins_regular"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/near_me_card"
+             app:layout_constraintVertical_bias="0.06999999" />
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
