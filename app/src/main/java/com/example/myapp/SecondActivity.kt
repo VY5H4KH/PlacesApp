@@ -20,11 +20,10 @@ class SecondActivity : AppCompatActivity() {
     lateinit var al : ArrayList<NearMeModel>
     lateinit var image : Array<Int>
     lateinit var text:  Array<String>
-//    lateinit var lat: Array<String>
-//    lateinit var long: Array<String>
     lateinit var label: Array<String>
     lateinit var pl: EditText
     lateinit var bu: ImageButton
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
